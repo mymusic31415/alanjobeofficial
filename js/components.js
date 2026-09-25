@@ -1,24 +1,23 @@
 async function loadComponent(elementId, file) {
     const element = document.getElementById(elementId);
-
-    if (!element) {
-        return;
-    }
+    if (!element) return;
 
     try {
-        const response = await fetch(file);
+        const base = window.location.pathname.includes("/alanjobeofficial/")
+            ? "/alanjobeofficial/"
+            : "/";
+
+        const response = await fetch(base + file);
 
         if (!response.ok) {
-            throw new Error(`Failed to load ${file}`);
+            throw new Error(`Failed to load ${base + file}`);
         }
 
         element.innerHTML = await response.text();
-
     } catch (error) {
         console.error(error);
     }
 }
-
 
 function setActiveNavigation() {
     const currentPage =
@@ -34,13 +33,15 @@ function setActiveNavigation() {
     });
 }
 
-
 async function initializeComponents() {
+    const base = window.location.pathname.includes("/alanjobeofficial/")
+        ? "/alanjobeofficial/"
+        : "/";
+
     await loadComponent("site-header", "components/header.html");
     await loadComponent("site-footer", "components/footer.html");
 
     setActiveNavigation();
 }
-
 
 document.addEventListener("DOMContentLoaded", initializeComponents);
