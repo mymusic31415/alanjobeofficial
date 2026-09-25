@@ -1,0 +1,86 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Avenir Next", sans-serif !important;
+    color: white;
+}
+
+header {
+    background: linear-gradient(90deg, #2c3e50 0%, #264655 100%);
+    border-bottom: 4px solid rgba(122, 173, 224, 0.12);
+    padding: 14px 0;
+}
+
+.w3-bar {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+}
+
+.w3-bar .w3-button {
+    color: white !important;
+    transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.w3-bar .w3-button:hover:not(.logo-link) {
+    color: #000000 !important;
+    background-color: transparent !important;
+}
+
+.logo-link,
+.logo-link:hover,
+.logo-link:active,
+.logo-link:visited {
+    color: white !important;
+}
+
+.logo-link:hover {
+    background-color: transparent !important;
+}
+
+.w3-bar .active {
+    color: #9dbfff !important;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #1c538e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #0c5bae;
+    transform: translateY(-1px);
+}
+
+.inline-img {
+    float: right;
+    width: 180px;
+    margin: 0 0 1rem 1rem;
+    display: block;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin: 50px 20px 0;
+}

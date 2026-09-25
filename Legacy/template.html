@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alan's Christian Music Ministries</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6, p {
+            font-family: "Avenir Next", sans-serif !important;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(90deg, #2c3e50 0%, #264655 100%);
+            border-bottom: 4px solid rgba(122,173,224,0.12);
+            padding: 14px 0;
+        }
+
+        .w3-bar {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+        .w3-bar .w3-button {
+            color: white !important;
+            transition: color 0.25s ease, background-color 0.25s ease;
+        }
+
+        .w3-bar .w3-button:hover:not(.logo-link) {
+            color: #000000 !important;
+            background-color: transparent !important;
+        }
+
+        .logo-link:hover {
+            color: white !important;
+            background-color: transparent !important;
+        }
+
+        .w3-bar .active {
+            color: #9dbfff !important;
+        }
+
+        .page-section {
+            display: none;
+        }
+
+        .page-section.active-section {
+            display: block;
+        }
+
+        .read-more-btn {
+            background-color: #1c538e;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .read-more-btn:hover {
+            background-color: #0c5bae;
+            transform: translateY(-1px);
+        }
+
+        .logo-link {
+            color: white !important;
+        }
+
+        .logo-link:hover,
+        .logo-link:active,
+        .logo-link:visited {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: black !important;
+        }
+
+        .inline-img {
+            float: right;
+            width: 180px;
+            margin: 0 0 1rem 1rem;
+            display: block;
+        }
+    </style>
+</head>
+<body style="font-family: 'Avenir Next', sans-serif;">
+
+
+</body>
+<script>
+    const navLinks = document.querySelectorAll(".nav-link");
+    const logoLink = document.querySelector(".logo-link");
+    const sections = document.querySelectorAll(".page-section");
+
+    function showSection(targetId) {
+        sections.forEach(section => {
+            section.classList.toggle("active-section", section.id === targetId);
+        });
+
+        navLinks.forEach(link => {
+            link.classList.toggle("active", link.getAttribute("href") === "#" + targetId);
+        });
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            showSection(this.getAttribute("href").substring(1));
+        });
+    });
+
+    logoLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        showSection("home");
+    });
+
+    showSection("home");
+</script>
+</html>
+

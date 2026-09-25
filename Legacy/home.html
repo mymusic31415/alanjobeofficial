@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alan's Christian Music Ministries</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6, p {
+            font-family: "Avenir Next", sans-serif !important;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(90deg, #2c3e50 0%, #264655 100%);
+            border-bottom: 4px solid rgba(122,173,224,0.12);
+            padding: 14px 0;
+        }
+
+        .w3-bar {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+        .w3-bar .w3-button {
+            color: white !important;
+            transition: color 0.25s ease, background-color 0.25s ease;
+        }
+
+        .w3-bar .w3-button:hover:not(.logo-link) {
+            color: #000000 !important;
+            background-color: transparent !important;
+        }
+
+        .logo-link:hover {
+            color: white !important;
+            background-color: transparent !important;
+        }
+
+        .w3-bar .active {
+            color: #9dbfff !important;
+        }
+
+        .page-section {
+            display: none;
+        }
+
+        .page-section.active-section {
+            display: block;
+        }
+
+        .read-more-btn {
+            background-color: #1c538e;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .read-more-btn:hover {
+            background-color: #0c5bae;
+            transform: translateY(-1px);
+        }
+
+        .logo-link {
+            color: white !important;
+        }
+
+        .logo-link:hover,
+        .logo-link:active,
+        .logo-link:visited {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: black !important;
+        }
+
+        .inline-img {
+            float: right;
+            width: 180px;
+            margin: 0 0 1rem 1rem;
+            display: block;
+        }
+    </style>
+</head>
+<body style="font-family: 'Avenir Next', sans-serif;">
+<header class="w3-container" style="border-radius:0px; padding:12px 20px; background-color: dodgerblue;">
+    <div class="w3-bar" style="background-color: transparent; border: none;">
+        <a href="#home" class="w3-bar-item w3-button logo-link" style="font-weight: bold; font-size: 1.5em;">ALAN JOBE</a>
+        <a href="#home" class="w3-bar-item w3-button nav-link active" style="font-size: 1.2em;">Home</a>
+        <a href="#about" class="w3-bar-item w3-button nav-link" style="font-size: 1.2em;">About</a>
+        <a href="#music" class="w3-bar-item w3-button nav-link" style="font-size: 1.2em;">Music</a>
+    </div>
+</header>
+
+<section id="home" class="page-section active-section">
+    <div class="w3-display-container w3-text-white">
+        <img src="../Assets/bannerimg2.png" alt="" style="width: 100vw; height: auto; display: block;">
+        <div class="w3-display-topmiddle w3-grid-padding" style="font-size: clamp(1px, 5vw, 100px); white-space: nowrap; margin-top:10px;"><br>Welcome to the official website of</div>
+        <div class="w3-display-middle w3-grid-padding" style="font-size: clamp(1px, 5.5vw, 100px); white-space: nowrap; font-weight: 600;"><b>Alan's Christian Music Ministries!</b></div>
+    </div>
+
+    <div style="background-color:#44618d; display: flex; justify-content: center; align-items: center; padding: 20px 0;">
+        <a href="https://www.youtube.com/@AllGloryBeToGodMostHigh" target="_blank" rel="noopener noreferrer">
+            <img sizes="48px" srcset="https://static.wixstatic.com/media/e9bb463a1bc4434c9d33b81b1fe937f5.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e9bb463a1bc4434c9d33b81b1fe937f5.png 1x, https://static.wixstatic.com/media/e9bb463a1bc4434c9d33b81b1fe937f5.png/v1/fill/w_96,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e9bb463a1bc4434c9d33b81b1fe937f5.png 2x" src="https://static.wixstatic.com/media/e9bb463a1bc4434c9d33b81b1fe937f5.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e9bb463a1bc4434c9d33b81b1fe937f5.png" alt="YouTube" style="object-fit:cover" width="48" height="48">
+        </a>
+    </div>
+
+    <div style="background-color:#2c3e5a">
+        <br>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="../Assets/profilepic.jpg" width="150" alt="" style="border-radius: 50%;">
+            <p style="margin-left: 30px; font-size: 30px; color: white;"><i>Alan Jobe</i></p>
+        </div>
+        <br>
+        <p style="margin-left: 20px; margin-right: 20px;">Alan Jobe is a young Christian pianist, recording artist, and follower of Christ. He has worked with 3ABN a lot in the past and has been able to record a lot of programs, namely Kids Praise, Kids Christmas, and Kids X-Press, among others.</p>
+        <div style="display: flex; justify-content: center;">
+            <button class="read-more-btn" onclick="showSection('about')">Read More</button>
+        </div>
+        <br>
+    </div>
+</section>
+
+<section id="about" class="page-section">
+    <div style="background-color:#2c3e5a">
+        <div class="w3-display-container w3-text-white">
+            <img src="../Assets/img.png" alt="" style="width: 100vw; height: auto; display: block;">
+            <div class="w3-display-middle w3-grid-padding" style="font-size: clamp(1px, 7vw, 100px); white-space: nowrap; font-family:Futura;"><b>GOOD TO MEET YOU</b></div>
+        </div>
+        <br>
+        <div class="w3-display-container w3-text-white" style="margin-left: 20px; margin-right: 20px;">
+            <p>My name is Alan Jobe.</p>
+            <h2>Birth</h2>
+            <p>I was born as a micro preemie; you know, those little premature babies (the size of your hand) that people talk about online? I was one of those babies. I was born 24 weeks and one day, instead of the usual 40 weeks, with my mom having a <i>placental abruption</i>, and after a series of life-threatening circumstances that happened, God intervened and saved me from dying in the NICU like so many other babies. But even then, those babies that live in the NICU have mental problems or disabilities that don't allow them to function properly. Praise God, He miraculously made it so that I don't have any sort of long-term disabilities!</p>
+            <p><img src="../Assets/baby1.png" class="inline-img" alt="">I stayed in the incubator for 4 months until after I was supposed to be born (which, by the way, is September 4), and for more than a year, I had to have oxygen and a pulse oximeter everywhere we went.</p>
+            <p>Aunt Cherryl observed, "When he was more than a year old I knew that God had something special for him." He really did -- and still does.</p>
+            <p>Here is one example of this.</p>
+            <p>The people working at the NICU checked about imminent problems that I may have had, and one of those was that after some testing they determined that I was deaf. Which, of course, was false, or I wouldn't be playing music. But anyway, my aunt Cherryl observed that, even before she thought I could read, Mom said, "<i>Ate</i>, Alan can read!" <i>Why?</i> Mom could take out a book to read, and then she would say something like "Alan, what is this word?" -- which, by the way, could be any word, even 4 syllable words -- and then I would <i>point</i> to the word on the page of the book. Aunt Cherryl observed this and said, "Hmmm... maybe Alan just knows the books that Bobet reads to him." So aunt Cherryl got <i>brand new</i> books, did the same procedure, and -- <i>would you believe it</i> -- I pointed to the correct words!</p>
+            <p>Now the interesting thing was that I could not bear to hear literally <i>ANY</i> sound for more than a year. Aunt Cherryl said that "he kept on closing his ears... he would scream." Yes, <i>scream</i>. My father remembers that vividly. Also, because of that I would not be able to stay too long in places like museums, and so I would say, when I was able to talk, "Exit! Exit!" because I wouldn't bear the noise.</p>
+            <p>That was just one of the problems I had. But I am so glad that God saved me from all these problems and now I am a healthy pre-teen with no disabilities, to speak of.</p>
+            <h2>Life</h2>
+            <p><img src="../Assets/img_1.png" class="inline-img" alt="">My first instrument, ever, that I got in contact with, was the violin. That didn't go too well, as I was running around all over the place trying to play the violin. When I was around 2, though, I got acquainted with the piano. And I picked it up pretty quick! The piano would go on to become my sole instrument, with even more recordings with it than even me singing while playing the piano!</p>
+            <p>In 2024, I started going to 3ABN for their Kids Christmas program. It was very enjoyable, with me playing 8 songs. After that, I got scheduled for a Kids X-Press, and at a turn of events, I was asked by Aunt Francine to be the new cohost! That was really enjoyable as well. Later I was able to go do Kids Praise, which is pretty similar to Kids Christmas, only <i>no Christmas songs</i>! I also did Jesus My Light, bringing my guitar. Later programs included Tiny Tots and Three Angels for Kids. (For Tiny Tots I literally had to play <i>60</i> short songs for the little kids! So you can imagine that it's stressful.) On Kids Praise I have done quite a few solo pieces, but also a bunch of collaborations, including 2 with good friend and rising star Sam Pio. (Check out her website at <a href="https://sampioofficial.com">sampioofficial.com</a>). Also, we did 4 songs with the 3ABN Kids Choir and those turned out pretty well.</p>
+            <p>I don't know what God has in store for my life, but I know that whatever He has got going is going to be <i>good</i>!!</p>
+        </div>
+        <br>
+    </div>
+</section>
+
+<section id="music" class="page-section">
+    <div class="w3-display-container w3-text-white">
+        <img src="../Assets/img_2.png" alt="" style="width: 100vw; height: auto; display: block;">
+    </div>
+    <div style="background-color:#2c3e5a; padding: 30px 20px; min-height: 50vh;">
+        
+        <h1>Music</h1>
+        <p>
+            Here you can find songs, performances, and recordings I’ve shared over time.
+            While full albums are still in the works, you can listen to my music and
+            watch performances on YouTube.
+        </p>
+
+        <p>
+            <a href="https://www.youtube.com/@AllGloryBeToGodMostHigh" target="_blank" rel="noopener noreferrer">
+                Watch Alan's Christian Music Ministries
+            </a>
+        </p>
+
+        <ul>
+            <li>Christian piano and vocal music</li>
+            <li>Recording projects with 3ABN</li>
+        </ul>
+
+        <p>More releases coming soon.</p>
+    </div>
+</section>
+</body>
+<script>
+    const navLinks = document.querySelectorAll(".nav-link");
+    const logoLink = document.querySelector(".logo-link");
+    const sections = document.querySelectorAll(".page-section");
+
+    function showSection(targetId) {
+        sections.forEach(section => {
+            section.classList.toggle("active-section", section.id === targetId);
+        });
+
+        navLinks.forEach(link => {
+            link.classList.toggle("active", link.getAttribute("href") === "#" + targetId);
+        });
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            showSection(this.getAttribute("href").substring(1));
+        });
+    });
+
+    logoLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        showSection("home");
+    });
+
+    showSection("home");
+</script>
+</html>
+

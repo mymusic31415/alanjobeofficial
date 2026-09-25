@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Alan Jobe | Christian Music Ministries</title>
+
+  <link
+          rel="stylesheet"
+          href="https://www.w3schools.com/w3css/5/w3.css"
+  >
+
+  <style>
+    /* =========================
+       Global
+    ========================= */
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Avenir Next", sans-serif;
+      color: white;
+      background-color: #2c3e5a;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: "Avenir Next", sans-serif;
+    }
+
+    /* =========================
+       Header / Navigation
+    ========================= */
+
+    header {
+      background: linear-gradient(
+              90deg,
+              #2c3e50 0%,
+              #264655 100%
+      );
+      border-bottom: 4px solid rgba(122, 173, 224, 0.12);
+      padding: 12px 20px;
+    }
+
+    .w3-bar {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      flex-wrap: wrap;
+      background-color: transparent !important;
+      border: none !important;
+    }
+
+    .w3-bar .w3-button {
+      color: white !important;
+      transition:
+              color 0.25s ease,
+              background-color 0.25s ease;
+    }
+
+    .nav-link:hover {
+      color: #000 !important;
+      background-color: transparent !important;
+    }
+
+    .nav-link.active {
+      color: #9dbfff !important;
+    }
+
+    .logo-link,
+    .logo-link:hover,
+    .logo-link:active,
+    .logo-link:visited {
+      color: white !important;
+      background-color: transparent !important;
+    }
+
+    /* =========================
+       General Components
+    ========================= */
+
+    .read-more-btn {
+      background-color: #1c538e;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .read-more-btn:hover {
+      background-color: #0c5bae;
+      transform: translateY(-1px);
+    }
+
+    .center-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-section {
+      background-color: #2c3e5a;
+    }
+
+    .side-padding {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .inline-img {
+      float: right;
+      width: 180px;
+      margin: 0 0 1rem 1rem;
+      display: block;
+    }
+
+    /* =========================
+       Hero Sections
+    ========================= */
+
+    .hero {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-title {
+      font-size: clamp(1.4rem, 5.5vw, 5rem);
+      text-align: center;
+      white-space: normal;
+      font-weight: 600;
+      padding: 0 20px;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.2rem, 5vw, 5rem);
+      text-align: center;
+      white-space: normal;
+      padding: 0 20px;
+    }
+
+    /* =========================
+       Responsive
+    ========================= */
+
+    @media (max-width: 500px) {
+      header {
+        padding: 10px;
+      }
+
+      .w3-bar .w3-button {
+        font-size: 1rem !important;
+      }
+
+      .inline-img {
+        float: none;
+        width: 100%;
+        max-width: 180px;
+        margin: 0 auto 1rem auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- =========================
+     Header
+========================= -->
+
+<header>
+  <div class="w3-bar">
+
+    <a
+            href="../index.html"
+            class="w3-bar-item w3-button logo-link"
+            style="font-weight: bold; font-size: 1.5em;"
+    >
+      ALAN JOBE
+    </a>
+
+    <a
+            href="../index.html"
+            class="w3-bar-item w3-button nav-link active"
+            style="font-size: 1.2em;"
+    >
+      Home
+    </a>
+
+    <a
+            href="about.html"
+            class="w3-bar-item w3-button nav-link"
+            style="font-size: 1.2em;"
+    >
+      About
+    </a>
+
+    <a
+            href="music.html"
+            class="w3-bar-item w3-button nav-link"
+            style="font-size: 1.2em;"
+    >
+      Music
+    </a>
+
+  </div>
+</header>
+
+
+<!-- =========================
+     Main Content
+========================= -->
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img
+            src="../Assets/bannerimg2.png"
+            alt="Alan's Christian Music Ministries"
+    >
+
+    <div class="w3-display-topmiddle hero-subtitle">
+      Welcome to the official website of
+    </div>
+
+    <div class="w3-display-middle hero-title">
+      <b>Alan's Christian Music Ministries!</b>
+    </div>
+  </section>
+
+
+  <!-- YouTube -->
+  <section
+          style="
+                background-color: #44618d;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0;
+            "
+  >
+
+    <a
+            href="https://www.youtube.com/@AllGloryBeToGodMostHigh"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Alan's Christian Music Ministries on YouTube"
+    >
+      <img
+              src="https://static.wixstatic.com/media/e9bb463a1bc4434c9d33b81b1fe937f5.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e9bb463a1bc4434c9d33b81b1fe937f5.png"
+              srcset="
+                        https://static.wixstatic.com/media/e9bb463a1bc4434c9d33b81b1fe937f5.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e9bb463a1bc4434c9d33b81b1fe937f5.png 1x,
+                        https://static.wixstatic.com/media/e9bb463a1bc4434c9d33b81b1fe937f5.png/v1/fill/w_96,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e9bb463a1bc4434c9d33b81b1fe937f5.png 2x
+                    "
+              width="48"
+              height="48"
+              alt="YouTube"
+      >
+    </a>
+
+  </section>
+
+
+  <!-- Introduction -->
+  <section class="content-section">
+
+    <br>
+
+    <div class="center-flex">
+
+      <img
+              src="../Assets/profilepic.jpg"
+              width="150"
+              height="150"
+              alt="Portrait of Alan Jobe"
+              style="border-radius: 50%; object-fit: cover;"
+      >
+
+      <p
+              style="
+                        margin-left: 30px;
+                        font-size: 30px;
+                        color: white;
+                    "
+      >
+        <i>Alan Jobe</i>
+      </p>
+
+    </div>
+
+    <br>
+
+    <p class="side-padding">
+      Alan Jobe is a young Christian pianist, recording artist,
+      and follower of Christ. He has worked with 3ABN a lot in
+      the past and has been able to record a lot of programs,
+      namely Kids Praise, Kids Christmas, and Kids X-Press,
+      among others.
+    </p>
+
+    <div class="center-flex">
+
+      <a href="about.html">
+        <button class="read-more-btn">
+          Read More
+        </button>
+      </a>
+
+    </div>
+
+    <br>
+
+  </section>
+
+</main>
+
+</body>
+</html>
+
