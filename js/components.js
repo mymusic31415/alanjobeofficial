@@ -1,12 +1,8 @@
-async function loadComponent(elementId, file) {
+async function loadComponent(elementId, file, base) {
     const element = document.getElementById(elementId);
     if (!element) return;
 
     try {
-        const base = window.location.pathname.includes("/alanjobeofficial/")
-            ? "/alanjobeofficial/"
-            : "/";
-
         const response = await fetch(base + file);
 
         if (!response.ok) {
@@ -38,8 +34,8 @@ async function initializeComponents() {
         ? "/alanjobeofficial/"
         : "/";
 
-    await loadComponent("site-header", "components/header.html");
-    await loadComponent("site-footer", "components/footer.html");
+    await loadComponent("site-header", "components/header.html", base);
+    await loadComponent("site-footer", "components/footer.html", base);
 
     setActiveNavigation();
 }
