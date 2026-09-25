@@ -1,0 +1,1 @@
+Hi everyone! My name is Alan Jobe, creator of the YouTube channel Alan's Christian Music Ministries. I have decided to create a little website for me and my channel. Please forgive me as this is a work in progress.
